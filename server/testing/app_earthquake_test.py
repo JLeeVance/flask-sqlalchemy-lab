@@ -27,6 +27,7 @@ class TestApp:
         # convert to JSON
         response_json = json.loads(response_body)
         # confirm JSON data
+        print(response_json)
         assert response_json["id"] == 2
         assert response_json["magnitude"] == 9.2
         assert response_json["location"] == "Alaska"
